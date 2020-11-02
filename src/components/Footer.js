@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Footer() {
   return (
@@ -65,36 +66,36 @@ export default function Footer() {
                   </span>
                   <ul className='list-unstyled'>
                     <li>
-                      <a
+                      <Link
                         className='text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='https://www.creative-tim.com/presentation'
+                        to='https://www.creative-tim.com/presentation'
                       >
                         About Us
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className='text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='https://blog.creative-tim.com'
+                        to='https://blog.creative-tim.com'
                       >
                         Blog
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className='text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='https://www.github.com/creativetimofficial'
+                        to='https://www.github.com/creativetimofficial'
                       >
                         Github
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className='text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='https://www.creative-tim.com/bootstrap-themes/free'
+                        to='https://www.creative-tim.com/bootstrap-themes/free'
                       >
                         Free Products
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -104,36 +105,36 @@ export default function Footer() {
                   </span>
                   <ul className='list-unstyled'>
                     <li>
-                      <a
+                      <Link
                         className='text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md'
+                        to='https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md'
                       >
                         MIT License
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className='text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='https://creative-tim.com/terms'
+                        to='https://creative-tim.com/terms'
                       >
                         Terms & Conditions
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className='text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='https://creative-tim.com/privacy'
+                        to='https://creative-tim.com/privacy'
                       >
                         Privacy Policy
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a
+                      <Link
                         className='text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm'
-                        href='https://creative-tim.com/contact-us'
+                        to='https://creative-tim.com/contact-us'
                       >
                         Contact Us
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -145,12 +146,12 @@ export default function Footer() {
             <div className='w-full md:w-4/12 px-4 mx-auto text-center'>
               <div className='text-sm text-gray-600 font-semibold py-1'>
                 Copyright © {new Date().getFullYear()} Tailwind Starter Kit by{' '}
-                <a
-                  href='https://www.creative-tim.com'
+                <Link
+                  to='https://app.netlify.com/teams/mabubakar/sites'
                   className='text-gray-600 hover:text-gray-900'
                 >
-                  Creative Tim
-                </a>
+                  Abubakar
+                </Link>
                 .
               </div>
             </div>
