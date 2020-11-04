@@ -1,7 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Hero = () => {
+  //Animation
+  AOS.init()
+
   return (
     <>
       <div
@@ -23,7 +28,14 @@ const Hero = () => {
           ></span>
         </div>
 
-        <div className='container relative mx-auto'>
+        <div
+          className='container relative mx-auto'
+          data-aos='fade-up'
+          data-aos-offset='200'
+          data-aos-duration='1000'
+          data-aos-easing='ease-in-out'
+          data-aos-once='false'
+        >
           <div className='items-center flex flex-wrap'>
             <div className='w-full lg:w-6/12 px-4 ml-auto mr-auto text-center'>
               <div className='pr-12'>

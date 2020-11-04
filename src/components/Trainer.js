@@ -1,6 +1,11 @@
 import React from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const Trainer = () => {
+  //Animation
+  AOS.init()
+
   return (
     <>
       <section className='pt-20 pb-48'>
@@ -20,7 +25,10 @@ const Trainer = () => {
           {/* Trainer Card Wrapper */}
           <div className='flex flex-wrap'>
             {/* Card 1 */}
-            <div className='w-full md:w-4/12 lg:mb-0 mb-12 px-4'>
+            <div
+              className='w-full md:w-4/12 lg:mb-0 mb-12 px-4'
+              data-aos='zoom-in-up'
+            >
               <div className='px-6'>
                 <img
                   alt='...'
@@ -57,7 +65,10 @@ const Trainer = () => {
               </div>
             </div>
             {/* Card 2 */}
-            <div className='w-full md:w-4/12 lg:mb-0 mb-12 px-4'>
+            <div
+              className='w-full md:w-4/12 lg:mb-0 mb-12 px-4'
+              data-aos='zoom-in-up'
+            >
               <div className='px-6'>
                 <img
                   alt='...'
@@ -94,7 +105,10 @@ const Trainer = () => {
               </div>
             </div>
             {/* Card 3 */}
-            <div className='w-full md:w-4/12 lg:mb-0 mb-12 px-4'>
+            <div
+              className='w-full md:w-4/12 lg:mb-0 mb-12 px-4'
+              data-aos='zoom-in-up'
+            >
               <div className='px-6'>
                 <img
                   alt='...'

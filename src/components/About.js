@@ -1,12 +1,24 @@
 import React from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
 
 const About = () => {
+  //Animation
+  AOS.init()
+
   return (
     <>
       <section id='about' className='relative py-20 bg-black text-white'>
         <div className='container mx-auto px-4'>
           <div className='items-center flex flex-wrap'>
-            <div className='w-full md:w-4/12 ml-auto mr-auto px-4'>
+            <div
+              className='w-full md:w-4/12 ml-auto mr-auto px-4'
+              data-aos='fade-right'
+              data-aos-offset='200'
+              data-aos-duration='1000'
+              data-aos-easing='ease-in-out'
+              data-aos-once='false'
+            >
               <img
                 alt='...'
                 className='max-w-full rounded-lg shadow-lg'
@@ -14,7 +26,14 @@ const About = () => {
               />
             </div>
 
-            <div className='w-full md:w-5/12 ml-auto mr-auto px-4'>
+            <div
+              className='w-full md:w-5/12 ml-auto mr-auto px-4'
+              data-aos='fade-left'
+              data-aos-offset='200'
+              data-aos-duration='1000'
+              data-aos-easing='ease-in-out'
+              data-aos-once='false'
+            >
               <div className='md:pr-12'>
                 <small className='text-orange-500'>About our gym</small>
                 <h3 className='text-4xl uppercase font-bold'>
